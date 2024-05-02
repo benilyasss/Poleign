@@ -1,5 +1,5 @@
 # Poleign
-Poleign is a Valorant's Polygon Assistant. Poleign will help you improve your gameplay by giving you Polygon missions.
+Poleign is a Valorant's Polygon Assistant. Poleign will help you improve your gameplay by giving you Polygon missions. You can join our discord server [here](https://discord.gg/5frUcy6cgS)
 
 You can Start code by using command prompt like [Danser-go](https://github.com/Wieku/danser-go)
 # Arguments:

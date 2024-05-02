@@ -1,0 +1,5 @@
+argparse
+time
+requests
+easygui
+playsound==1.2.2

@@ -23,7 +23,7 @@ def hellianeasy():
     print("Do One tap for bots for 8 minutes. Starting timer for 5 seconds.")
     time.sleep(5)
     for i in range(481):
-        print(f"Follow Aim in bots for {i}/480 Second")
+        print(f"Do one tap in bots for {i}/480 Second")
         time.sleep(1)
         os.system("cls")
     playsound('notif.wav')
@@ -80,7 +80,7 @@ def helliannormal():
     print("Do One tap for bots for 8 minutes. Starting timer for 5 seconds.")
     time.sleep(5)
     for i in range(481):
-        print(f"Follow Aim in bots for {i}/480 Second")
+        print(f"Do one tap in bots for {i}/480 Second")
         time.sleep(1)
         os.system("cls")
     playsound('notif.wav')
@@ -137,7 +137,7 @@ def hellianhard():
     print("Do One tap for bots for 10 minutes. Starting timer for 5 seconds.")
     time.sleep(5)
     for i in range(601):
-        print(f"Follow Aim in bots for {i}/480 Second")
+        print(f"Do one tap in bots for {i}/600 Second")
         time.sleep(1)
         os.system("cls")
     playsound('notif.wav')
@@ -151,7 +151,7 @@ def hellianhard():
     print("Do double flick for 10 minutes. starting timer for 5 seconds.")
     time.sleep(5)
     for i in range(601):
-        print(f"Do double flick {i}/480 Second")
+        print(f"Do double flick {i}/600 Second")
         time.sleep(1)
         os.system("cls")
     playsound('notif.wav')
@@ -199,7 +199,7 @@ def miyagieasy():
 
 def miyaginormal():
     os.system("cls")
-    print("You selected Easy mode for Miyagi. Now let's start for 5 second.")
+    print("You selected Medium mode for Miyagi. Now let's start for 5 second.")
     time.sleep(5)
     print("Destroy 30 bots in Easy Mode with sheriff. Press Enter if you did.")
     os.system("pause > nul")
@@ -215,7 +215,7 @@ def miyaginormal():
 
 def miyagihard():
     os.system("cls")
-    print("You selected Easy mode for Miyagi. Now let's start for 5 second.")
+    print("You selected Hard mode for Miyagi. Now let's start for 5 second.")
     time.sleep(5)
     print("Destroy 30 bots in Easy Mode with sheriff. Press Enter if you did.")
     os.system("pause > nul")
@@ -228,6 +228,29 @@ def miyagihard():
     print("You compeleted the tasks, thank you for using. Have a nice day!")
     time.sleep(5)
     exit()
+
+# Galatasaray Espor
+
+def galatasaray():
+    os.system("cls")
+    print("You selected Galatasaray. Now let's start for 5 second.")
+    time.sleep(5)
+    print("Destroy 100 bots in 3 times. Press Enter if you did.")
+    os.system("pause > nul")
+    print("Destroy drones by guns for 20 mins. Now let's start for 10 second.")
+    time.sleep(10)
+    for i in range(1201):
+        print(f"get some rest {i}/1200 Second")
+        time.sleep(1)
+        os.system("cls")
+    playsound('notif.wav')
+    print("Select Easy mode on bots and if you started turn to back. if bot are spawned Look left and right through sound and hit. Press Enter if you did.")
+    os.system("pause > nul")
+    print("You compeleted the tasks, thank you for using. Have a nice day!")
+    time.sleep(5)
+    exit()
+
+
 
 
 
@@ -245,7 +268,7 @@ def main():
     parser.add_argument('-d', '--diger_parametre', metavar='Difficulty', type=str, help='Difficulty Mode To be easier or harder')
     args = parser.parse_args()
     print("Checking for updates")
-    fetchUpdateUrl = "https://poleign.glitch.me/b1.json"
+    fetchUpdateUrl = "https://poleign.glitch.me/b2.json"
     fetchUrlToUpdate = requests.get(fetchUpdateUrl)
     data = json.loads(fetchUrlToUpdate.text)
     fetchUrlToUpdate.raise_for_status()
@@ -259,7 +282,9 @@ def main():
     if args.parametre == "Hellian":
         print("Using Hellian Poligon")
     elif args.parametre == "Miyagi":
-        print("Using Esport Poligon")
+        print("Using Miyagi Poligon")
+    elif args.parametre == "Galatasaray":
+        galatasaray()
     else:
         print("Error you didnt used -p= or you used it wrongly")
     
